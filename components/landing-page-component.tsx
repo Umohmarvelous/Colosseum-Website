@@ -112,14 +112,10 @@ export default function LandingComponent() {
       {/* Header with Glass Morphism */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-black/20 backdrop-blur-md " : "bg-transparent"
-          }`}
-      // style={{
-      //   transform: `translateY(${scrollY * 0.02}px)`,
-      // }}
-      >
+          }`}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6">
           <div className="flex items-center justify-between">
-            <span className="text-xs md:text-sm font-bold tracking-wider text-white"></span>
+            <span className="text-xs md:text-sm font-bold tracking-wider text-white">Col</span>
 
             <nav className="hidden md:flex items-center space-x-8 lg:space-x-12">
               <a
@@ -215,7 +211,7 @@ export default function LandingComponent() {
               {/* Main "lab." text */}
               <div className="relative z-10">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white leading-none tracking-tighter">
-                  lab.
+                  col.
                 </h1>
               </div>
             </div>
@@ -280,7 +276,7 @@ export default function LandingComponent() {
 
         {/* Black gradient overlay at bottom */}
         {/* <div className="absolute bottom-0 left-0 right-0 h-30 md:h-30 bg-gradient-to-t from-black via-white/50 to-transparent pointer-events-none z-50"></div> */}
-        <div className="absolute bottom-30 right-15 flex items-center justify-between flex-col z-90">
+        <div className="absolute bottom-30 right-15 flex items-center justify-between flex-col z-100">
           <KeyboardArrowUp />
           <KeyboardArrowDown />
         </div>
